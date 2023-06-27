@@ -148,7 +148,7 @@ body>*{
 
 	#header{
 		position: absolute;
-		top:5vh;
+		top:0;
 		left:0;
 		display: flex;
 		flex-direction:column-reverse;
@@ -167,6 +167,7 @@ body>*{
 	#header-content>h1{
 		font-size: 3em;
 		margin-bottom: 2vh;
+		margin-top: 1vh;
 		margin-left:5vw;
 		width:100%;
 	}
