@@ -132,7 +132,7 @@ body>*{
 }
 
 
-@media screen and (max-width: 1080px) {
+@media screen and (min-width:0px) and (max-width: 1080px) {
 	html, body {margin: 0; height: 100%; overflow: hidden;}
 
 	#icon{
@@ -141,17 +141,19 @@ body>*{
 
 	#header{
 		top:-8vh;
-		left:10vw;
+		left:0;
 		flex-direction:column-reverse;
 		height:100%;
 		justify-content: flex-start;
 	}
 
 	.social_item{
-		height:10vh;
-		width:10vh;
+		height:5vh;
+		width:5vh;
 	}
-
+	#header-content{
+		margin-left: 1vw;
+	}
 	#header-content>h1{
 		font-size: 7em;
 		margin-bottom: 2vh;
@@ -169,7 +171,7 @@ body>*{
 	}
 
 	#social{
-		margin-left: -2vh;
+		margin-left: 5vh;
 	}
 	
 	/*making the text in the header p element content look cool*/
@@ -182,5 +184,6 @@ body>*{
 	#header-image{
 		width:70vw;
 		height:40vh;
+		margin-left: 1vw;
 	}
 }
