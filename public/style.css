@@ -140,7 +140,7 @@ body>*{
 	}
 
 	#header{
-		top:-5vh;
+		top:0;
 		left:0;
 		flex-direction:column-reverse;
 		height:100%;
@@ -184,7 +184,7 @@ body>*{
 	}
 
 	#header-image{
-		width:90vw;
+		width:80vw;
 		height:40vh;
 		margin-left: 5vw;
 	}
