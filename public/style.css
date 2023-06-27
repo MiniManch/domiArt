@@ -117,7 +117,7 @@ body>*{
 
 /*Navbar part*/
 
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 1280px) {
 	/*Header content*/
 	#header-content>h1{
 		font-size: 2.8em;
@@ -132,7 +132,7 @@ body>*{
 }
 
 
-@media screen and (min-width:0px) and (max-width: 1080px) {
+@media screen and (min-width: 300px){
 	html, body {margin: 0; height: 100%; overflow: hidden;}
 
 	#icon{
@@ -140,23 +140,25 @@ body>*{
 	}
 
 	#header{
-		top:-8vh;
+		top:-5vh;
 		left:0;
 		flex-direction:column-reverse;
 		height:100%;
+		width:100%;
 		justify-content: flex-start;
 	}
 
 	.social_item{
-		height:5vh;
-		width:5vh;
+		height:7vh;
+		width:7vh;
 	}
 	#header-content{
 		margin-left: 1vw;
 	}
 	#header-content>h1{
-		font-size: 7em;
+		font-size: 3em;
 		margin-bottom: 2vh;
+		margin-left:5vw;
 		width:100%;
 	}
 	
@@ -166,7 +168,7 @@ body>*{
 	}
 
 	#domi{
-		font-size: 1em !important;
+		font-size: 1em ;
 		font-weight:300 !important;
 	}
 
@@ -176,14 +178,14 @@ body>*{
 	
 	/*making the text in the header p element content look cool*/
 	#header-content > p{
-		margin-left: 5vw;
+		margin-left: 8vw;
 		margin-bottom: 0;
-		font-size: 2em;
+		font-size: 0.8em;
 	}
 
 	#header-image{
-		width:70vw;
+		width:90vw;
 		height:40vh;
-		margin-left: 1vw;
+		margin-left: 5vw;
 	}
 }
