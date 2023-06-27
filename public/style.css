@@ -45,7 +45,9 @@ body>*{
 		cursor: pointer;
 	}
 
-
+#social>a{
+	text-decoration: none;
+}
 .fb{
 	margin-left: 0;
 	background-image:url("../images/icons/fb.svg");
@@ -145,7 +147,8 @@ body>*{
 	}
 
 	#header{
-		top:0;
+		position: absolute;
+		top:5vh;
 		left:0;
 		display: flex;
 		flex-direction:column-reverse;
@@ -155,8 +158,8 @@ body>*{
 	}
 
 	.social_item{
-		height:7vh;
-		width:7vh;
+		height:8vh;
+		width:8vh;
 	}
 	#header-content{
 		margin-left: 1vw;
@@ -179,7 +182,8 @@ body>*{
 	}
 
 	#social{
-		margin-left: 5vh;
+		margin-left: 3vh;
+		margin-top: 1vh;
 	}
 	
 	/*making the text in the header p element content look cool*/
