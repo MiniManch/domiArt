@@ -1,202 +1,271 @@
-/*importing google font*/
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;500;600&display=swap');
-/*body background color and text color and font*/
-body{
-	margin:0;
-	background-color: #FAF9F6;
-	color:#100c08;
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* Global Styles */
+body {
+    margin: 0;
+    background-color: #FAF9F6;
+    color: #100c08;
+    font-family: 'Inter', sans-serif;
 }
 
-body>*{
-	font-family: 'Inter', sans-serif !important;
-
+/* Header Styles */
+#domi {
+    width: 80vw; /* Default width for smaller screens */
+    height: auto;
+    max-height: 40vh; /* Limit height to 40vh for all screens */
 }
 
-#header-image{
-	background-image:url("../images/main.jpeg") ;
-		background-repeat: no-repeat;
-		background-size: cover;
-		border-radius: 15px;
-}
-/*icon at the navbar*/
-#icon{
-	position: absolute;
-	left:1vw;
-	margin-left: 0;
-	margin-top: 0;
-	width: 20vh;
-	height: 20vh;
-	background-image:url("https://iili.io/H1M8u7S.png");
-	background-repeat: no-repeat;
-	background-size: contain;
+#header-image {
+    background-image: url("../images/main.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
 }
 
-.social_item{
-		display: inline-block;
-
-		height:10vh;
-		width:10vh;
-
-		margin-left: 3vw;
-
-		background-repeat: no-repeat;
-		background-size: cover;
-
-		cursor: pointer;
-	}
-
-#social>a{
-	text-decoration: none;
-}
-.fb{
-	margin-left: 0;
-	background-image:url("../images/icons/fb.svg");
+#icon {
+    position: absolute;
+    left: 3vw;
+    margin-left: 0;
+    margin-top: 0;
+    width: 15vw;
+    height: 20vh;
+    background-image: url("https://iili.io/H1M8u7S.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.ins{
-	background-image:url("../images/icons/ins-svg.svg") ;
+/* Social Icons */
+.social_item {
+    display: inline-block;
+    height: 10vh;
+    width: 10vh;
+    margin-left: 3vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
 }
 
-.wa{
-	background-image:url("../images/icons/wa.svg") ;
+#social > a {
+    text-decoration: none;
 }
 
-.gallery{
-	background-image:url("../images/icons/gallery.svg") ;
+.fb {
+    margin-left: 0;
+    background-image: url("../images/icons/fb.svg");
 }
 
+.ins {
+    background-image: url("../images/icons/ins-svg.svg");
+}
 
-/*Navbar part*/
+.wa {
+    background-image: url("../images/icons/wa.svg");
+}
 
+.gallery {
+    background-image: url("../images/icons/gallery.svg");
+}
+/* Styles for the bottom image */
+#bottom-image {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: auto; /* Adjust the width as needed */
+    height: auto; /* Adjust the height as needed */
+    max-width: 5%; /* Limit the maximum width */
+    z-index: 9999; /* Ensure it's above other elements */
+}
+
+/* Media Query for Larger Screens */
 @media screen and (min-width: 1080px) {
-	/*Header content*/
-	#header-content>h1{
-		font-size: 2.8em;
-	}
-	#header-content>h1>span{
-		font-size: 0.8em;
-	}
-	/*making the text in the header p element content look cool*/
-	#header-content > p{
-		margin-top: 0;
+    /* Header Content - Larger Screens */
+    #header-content > h1 {
+        font-size: 2.8em;
+    }
+
+    #header-content > h1 > span {
+        font-size: 1em;
+    }
+
+    #header-content > p {
+        margin-top: 0;
+    }
+
+    #header {
+        width: 70vw;
+        height: 60vh;
+        padding-bottom: 10vh;
+        position: absolute;
+        top: 15vh;
+        left: 15vw;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #header-image {
+        height: 60vh;
+        width: 27vw;
+    }
+
+    #header-content > h1 {
+        font-size: 4em;
+        margin-top: 0;
+        font-weight: 300;
+    }
+
+    #header-content > p {
+        margin-left: 5vw;
+        margin-bottom: 0;
+    }
+
+    /* Adjusted Styles for Larger Screens */
+    #domi {
+        width: 40vw; /* Width for larger screens */
+        height: 40vh;
+    }
+
+    /* Staircase Effect for Sentences */
+   
+
+    #header-content > #social {
+        height: 10vh;
+        margin-top: 2vh;
+    }
+
+    #social {
+        display: flex;
+        margin-left: 5vw;
+    }
+     #first_span {
+	    margin-left: 2vw;
 	}
 
-		/*main section*/
-	#header{
-		width:70vw;
-		height:60vh;
-		padding-bottom: 10vh;
+	 #second_span {
+	    margin-left: 4vw;
+	}
+
+	#third_span {
+	    margin-left: 6vw;
+	}
+
+	#fourth_span {
+	    margin-left: 10vw;
+	}
+	.tooltip{
 		position: absolute;
-		top:15vh;
-		left:15vw;
-		display: flex;
-		justify-content: space-around;
+		bottom:10%;
+		left:1%;
 	}
 
-	/*image inside header*/
-	#header-image{
-		height:60vh;
-		width:27vw;
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 1079px) {
+    /* Adjustments for Smaller Screens */
+    #icon {
+        height: 20vh;
+        width: 40vw; /* Increase the height of the logo */
+    }
+
+    #header {
+        position: absolute;
+        top: -10%;
+        left: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .social_item {
+        height: 8vh;
+        width: 8vh;
+    }
+
+    #header-image {
+        width: 80%; /* Adjust width to fill the screen */
+        height: 40vh; /* Maintain the same height */
+        margin-left: 10vw; /* Reset margin-left */
+    }
+
+    #header-content {
+        margin-left: 5vw; /* Adjust margin-left for content */
+    }
+
+    #header-content > h1 {
+        font-size: 2.5em; /* Adjust font size for header text */
+        margin-bottom: 1vh; /* Adjust margin for spacing */
+        margin-top: 1vh;
+        margin-left: 0; /* Reset margin-left */
+        width: 100%;
+    }
+
+    #header-content > p {
+    	margin-left: 5vw;
+        margin-bottom: 1vh; /* Adjust margin for spacing */
+        font-size: 0.9em; /* Adjust font size for content */
+    }
+     #first_span {
+	    margin-left: 4vw;
 	}
 
-	/*Header content*/
-	#header-content>h1{
-		font-size: 4em;
-		margin-top: 0;
-		font-weight:300;
-	}
-	
-	#header-content > p{
-		margin-left: 5vw;
-		margin-bottom: 0;
+	 #second_span {
+	    margin-left: 8vw;
 	}
 
-	#hey{
-		margin-left: 0;
-		font-size: 0.6em !important;
-	}
-	/*making the text in the header p element content look cool*/
-	
-
-	#first_span{
-		margin-left: 2vw;
+	#third_span {
+	    margin-left: 12vw;
 	}
 
-	#second_span{
-		margin-left: 4vw;
+	#fourth_span {
+	    margin-left: 16vw;
 	}
-
-	/*social part*/
-	#header-content>#social{
-		height:10vh;
-		margin-top: 2vh;
+	#bottom-image {
+	    max-width: 10%; /* Limit the maximum width */
 	}
-
-	#social{
-		display: flex;
-		margin-left: 5vw;
-		/* justify-content: center; */
+	.tooltip{
+		position: absolute;
+		bottom:6%;
+		left:1%;
 	}
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	#header-image {
+        width: 60%; /* Adjust width to fill the screen */
+        height: 40vh; /* Maintain the same height */
+        margin-left: 20vw; /* Reset margin-left */
+    }
 
-@media screen and (max-width: 1079px){
+     #header {
+        position: absolute;
+        top:-3%;
+        left: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        width: 100%;
+        justify-content: flex-start;
+    }
 
-	#icon{
-		height:10vh;
-	}
+    #social{
+    	width:fit-content;
+    	margin-left:15vw;
+    }
 
-	#header{
+    #header-content > p {
+    	margin-left: 10vw;
+        font-size: 1.2em; /* Adjust font size for content */
+    }
+
+    .tooltip{
 		position: absolute;
-		top:0;
-		left:0;
-		display: flex;
-		flex-direction:column-reverse;
-		height:100%;
-		width:100%;
-		justify-content: flex-start ;
+		bottom:8%;
+		left:1%;
 	}
 
-	.social_item{
-		height:8vh;
-		width:8vh;
-	}
-	#header-content{
-		margin-left: 1vw;
-	}
-	#header-content>h1{
-		font-size: 3em;
-		margin-bottom: 2vh;
-		margin-top: 1vh;
-		margin-left:5vw;
-		width:100%;
-	}
-	
-	#hey{
-		margin-left: 0;
-		font-size: 0.6em !important;
-	}
-
-	#domi{
-		font-size: 1em ;
-		font-weight:300 !important;
-	}
-
-	#social{
-		margin-left: 3vh;
-		margin-top: 1vh;
-	}
-	
-	/*making the text in the header p element content look cool*/
-	#header-content > p{
-		margin-left: 8vw;
-		margin-bottom: 0;
-		font-size: 0.8em;
-	}
-
-	#header-image{
-		width:80vw;
-		height:40vh;
-		margin-left: 5vw;
-	}
 }
+
